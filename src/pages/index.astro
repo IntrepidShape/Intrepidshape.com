@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Sidebar from "../components/landing/Sidebar.astro";
 import Lightroom from "../components/landing/Lightroom.astro";
 import { AstroSeo } from "@astrolib/seo";
+import AboutContent from "../components/about/AboutContent.astro";
 ---
 
 <!---
@@ -10,11 +11,11 @@ Use AstroSeo in all the pages you want different Seo than the index page
 -->
 <AstroSeo
   title="Home"
-  description="Your site or page description goes here"
-  canonical="https://www.lexingtonthemes.com"
+  description="Intrepid Shape Official Website"
+  canonical="https://www.intrepidshape.com"
   openGraph={{
-    url: "https://www.lexingtonthemes.com",
-    title: "Open Graph Title",
+    url: "https://www.intrepidshape.com",
+    title: "Intrepid Shape Official Website",
     description: "Open Graph Description",
     images: [
       {
@@ -34,10 +35,10 @@ Use AstroSeo in all the pages you want different Seo than the index page
       { url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg" },
       { url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg" },
     ],
-    site_name: "YourSitesName",
+    site_name: "Intrepid Shape Official Website",
   }}
   twitter={{
-    handle: "@TwitterHandle",
+    handle: "@IntrepidShape",
     site: "@site",
     cardType: "summary_large_image",
   }}
@@ -46,7 +47,7 @@ Use AstroSeo in all the pages you want different Seo than the index page
   <div class="2xl:max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-4">
       <Sidebar />
-      <Lightroom />
+      <AboutContent />
     </div>
   </div>
 </BaseLayout>
